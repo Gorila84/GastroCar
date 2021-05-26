@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+ html{
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    
+}
+
+.hero-shadow {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: -1;
+}
+
+/* Header */
+header{
+    position: relative;
+    height: 35rem;
+    background-image: url(/img/baner.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#cos {
+  color:white;
+  font-size: 8rem;
+}
+.typed-cursor{
+  display: none;
+}
+/* Oferta */
+.service-list {
+    list-style-type: none;
+}
+
+/* Kontakt */
+#kontakt{
+    background-color: #f5f3ed;
+}
+.contact-data{
+    font-size: 3rem;
+}
+
+.font-awesome-kontakt {
+    font-size: 3rem;
+    color: #62A8E5;
+}
+
+iframe{
+    height: 400px;
+}
+
+/* scroll */
+#button {
+    display: inline-block;
+    background-color: #62A8E5;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    z-index: 1000;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }  
+  .show {
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .text-slider-items { 
+    display: none; 
+} 
